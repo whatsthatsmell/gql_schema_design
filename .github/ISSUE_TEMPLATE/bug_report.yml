@@ -47,6 +47,8 @@ body:
     attributes:
       label: Exception or Error
       description: If there are console errors or an accompanying stack-trace, paste that here. If the exception was caught by Sentry, paste the link to that exception.
+    validations:
+      required: true
   - type: textarea
     id: your-environment
     attributes:
@@ -62,3 +64,5 @@ body:
     attributes:
     label: Anything else relevant?
     description: Tell us anything that else that gives us context or will help us resolve this issue.
+    validations:
+      required: true
