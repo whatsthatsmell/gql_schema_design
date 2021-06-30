@@ -1,0 +1,65 @@
+name: 🐛 Bug Report
+description: Whoops, something went wrong...
+title: "[Bug]: "
+labels: [type: fix]
+body:
+  - type: markdown
+    value: "### Minimal Reproduction"
+  - type: input
+    id: url
+    attributes:
+      label: Affected URL
+      description: URL where a reproduction can be seen
+      placeholder: ex. https://my.max.auto/inventory
+    validations:
+      required: false
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: Steps to Reproduce
+      description: Also tell us, what did you expect to happen?
+      placeholder: When possible provide enough specificity that anybody can reproduce.
+      value: |
+        1.
+        2.
+        3.
+        ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: Please tell us what you believe should have happened.
+      render: shell
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: Please tell us the behavior you actually see.
+      render: shell
+  - type: markdown
+    value: "### Screenshot"
+  - type: textarea
+    id: exception-error
+    attributes:
+      label: Exception or Error
+      description: If there are console errors or an accompanying stack-trace, paste that here. If the exception was caught by Sentry, paste the link to that exception.
+      render: shell
+  - type: textarea
+    id: your-environment
+    attributes:
+    label: Your Environment
+    description: Please tell us about your environment.
+    value: |
+        - Operating System 
+        - Browser 
+        - Reproducible on other systems?
+        ...
+    render: shell
+  - type: textarea
+    id: anythis-else
+    attributes:
+    label: Anything else relevant?
+    description: Tell us anything that else that gives us context or will help us resolve this issue.
+    render: shell
