@@ -32,12 +32,16 @@ body:
       label: Expected Behavior
       description: Please tell us what you believe should have happened.
       render: shell
+    validations:
+      required: false
   - type: textarea
     id: actual-behavior
     attributes:
       label: Actual Behavior
       description: Please tell us the behavior you actually see.
       render: shell
+    validations:
+      required: false
   - type: markdown
     value: "### Screenshot"
   - type: textarea
